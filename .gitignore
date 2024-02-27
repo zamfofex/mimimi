@@ -1,0 +1,6 @@
+*
+!/.gitignore
+!/.devcontainer.json
+!/fetch.sh
+!/start.sh
+!/readme.md

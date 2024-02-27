@@ -1,0 +1,14 @@
+{
+	"name": "mimimi",
+	"image": "mcr.microsoft.com/devcontainers/base:alpine",
+	"postCreateCommand": ["./fetch.sh"],
+	"postStartCommand": ["nohup", "./start.sh"],
+	"forwardPorts": [8017],
+	"customizations":
+	{
+		"vscode":
+		{
+			"extensions": ["ms-vscode.cpptools"]
+		}
+	}
+}
