@@ -4,6 +4,7 @@
 	"postCreateCommand": ["./fetch.sh"],
 	"postStartCommand": ["nohup", "./start.sh"],
 	"forwardPorts": [8017],
+	"portsAttributes": {"8017": {"onAutoForward": "openPreview"}},
 	"customizations":
 	{
 		"vscode":
