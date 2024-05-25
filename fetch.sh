@@ -4,7 +4,7 @@ set -e
 sudo apk add wget wasi-sdk samurai python3 clang lld llvm binaryen inotify-tools
 
 test -d core || (
-	wget -O mimimi.tar https://zamfofex.neocities.org/mimimi/mimimi-M49.tar
+	wget -O mimimi.tar https://zamfofex.neocities.org/mimimi/mimimi-M50.tar
 	tar xf mimimi.tar --strip-components=1
 )
 
@@ -19,4 +19,4 @@ test -d meson || (
 
 rm -rf build
 meson/meson.py setup --cross-file=meta/wasm32.txt build
-ln -sf build/mimimi-loader-async.wasm mimimi-loader.wasm
+ln -sf build/mimimi-chapter-I-async.wasm mimimi.wasm
