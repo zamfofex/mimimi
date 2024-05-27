@@ -4,7 +4,7 @@ set -e
 sudo apk add wget wasi-sdk samurai python3 clang lld llvm binaryen inotify-tools
 
 test -d core || (
-	wget -O mimimi.tar https://zamfofex.neocities.org/mimimi/mimimi-M50.tar
+	wget -O mimimi.tar https://zamfofex.neocities.org/mimimi/mimimi-M51.tar
 	tar xf mimimi.tar --strip-components=1
 )
 
